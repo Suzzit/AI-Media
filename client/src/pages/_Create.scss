@@ -1,0 +1,108 @@
+.create-page-main {
+    background-color: transparent;
+    max-height: 100%;
+
+    .homepage-main__form-wrapper {
+        height: 100px;
+
+        form {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .homepage-main__filterscontainer {
+                height: fit-content;
+                padding: 10px;
+                width: 100%;
+                font-family: 'Lato';
+                display: flex;
+                justify-content: center;
+
+                .filterscontainer__wrapper {
+                    width: 600px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .filterscontainer__bigscreen {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    input {
+                        max-width: 20px;
+                        outline: none;
+                        border: 1px solid lightgray;
+                        text-align: center;
+                    }
+
+                    .filterslists {
+
+                        span {
+                            margin: 10px;
+                        }
+
+                        select {
+                            outline: none;
+                            border: 1px solid lightgray;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .homepage-main__searchcontrolwrapper {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                input {
+                    height: 30px;
+                    width: 500px;
+                    border: none;
+                    outline: 1px solid lightgray;
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+
+                button {
+                    height: 30px;
+                    width: 100px;
+                    border: none;
+                    background-color: rgb(18, 75, 18);
+                    color: white;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .homepage-main__showcase {
+        display: grid;
+        place-content: center;
+
+        h1 {
+            padding: 10px;
+            font-family: 'Lato';
+        }
+
+        h2 {
+            padding: 10px;
+            font-family: 'Lato';
+        }
+
+        .showcase__images-grid {
+            img {
+                margin: 10px;
+            }
+        }
+
+    }
+}
+
+//Responsiveness
+// @media screen and (max-width: 100px) {
+
+// }

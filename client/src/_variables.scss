@@ -1,0 +1,19 @@
+$breakpoint-tablet: 768px;
+$root-font-size: 100%;
+
+$bg-color: yellow;
+
+@function pxToRem($pxValue) {
+    $result: ($pxValue / 16)+rem;
+    @return $result;
+}
+
+.wrapper {
+    background-color: rgba($color: white, $alpha: 0.5);
+    filter: blur(50px);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
