@@ -48,7 +48,7 @@ const PromptFields = (props) => {
       openAIFetcher(finalUserPrompt)
       .then((res)=>{
         props.giveImageData(res.data)
-      })
+      }).catch(err => console.log(err))
     }
   }
 
@@ -63,9 +63,9 @@ const PromptFields = (props) => {
       <form onSubmit={handleSubmit}>
         <div className='homepage-main__searchcontrolwrapper'>
 
-          <input type="text" placeholder='Welcome (Search your prompt here...)' onChange={(e) => { setUserPrompt(e.target.value) }} />
+          <textarea type="text" placeholder='Welcome (Search your prompt here...)' onChange={(e) => { setUserPrompt(e.target.value) }} />
 
-          <button type='submit'>Submit</button>
+          <button type='submit'>Generate Image</button>
 
         </div>
 

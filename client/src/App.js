@@ -4,6 +4,7 @@ import axios from 'axios'
 
 import { Home, Explore, Login, Register, Create } from "./pages/exporter"
 import { Navbar } from "./components/exporter"
+import ImageShowcase from "./components/ImageShowcase";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -21,8 +22,9 @@ const App = () => {
       <Router basename={process.env.PUBLIC_URL}>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="create" element={<Create />} />
+            <Route path="/create" element={<Create />}>
+              <Route path="imageshowcase/:url" element={<ImageShowcase />} />
+            </Route>
           </Routes>
       </Router>
     </div>

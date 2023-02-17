@@ -10,16 +10,12 @@ function Navbar() {
                 <span>AI-MEDIA</span>
             </div>
             <nav className="navbar-wrapper__navbar-main">
-                <NavLink to={"/"}>
-                    Home
-                </NavLink>
-
-                <NavLink to={"/create"}>
-                    Create
-                </NavLink>
-
                 <NavLink to={"/explore"}>
-                    Explore
+                    Community
+                </NavLink>
+
+                <NavLink className="navbar-wrapper__navbar-main__create" to={"/create"}>
+                    Create
                 </NavLink>
             </nav>
 

@@ -9,14 +9,13 @@
 }
 
 .navbar-wrapper {
-  max-width: 100%;
-  height: 50px;
+  width: 100%;
+  height: 3.75rem;
   display: flex;
   justify-content: space-between;
-}
-.navbar-wrapper__logodiv {
-  margin-left: 10px;
-  width: 200px;
+  padding: 5px 10px;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 1px 7px 10px -4px rgba(0, 0, 0, 0.5);
 }
 .navbar-wrapper__logodiv span {
   height: 100%;
@@ -26,32 +25,32 @@
   align-items: flex-end;
   font-family: "Lato";
   font-weight: 600;
-  font-size: 1.1875rem;
+  font-size: clamp(1.25rem, 3vw, 30px);
   text-decoration: overline underline;
 }
 .navbar-wrapper__navbar-main {
-  width: 100%;
   height: 100%;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-end;
 }
 .navbar-wrapper__navbar-main a {
+  height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   text-decoration: none;
   color: black;
   font-family: "Lato";
   font-weight: 600;
-  font-size: rem(19);
-  margin: 8px 20px;
+  font-size: clamp(1rem, 4vw, 1.2rem);
 }
 .navbar-wrapper__navbar-main__profile-main {
-  background-color: green;
   height: 100%;
-  width: 12.5rem;
-  min-width: 50px;
-  margin-right: 10px;
-  display: flex;
-  justify-content: center;
+  visibility: hidden;
 }
 .navbar-wrapper__navbar-main__profile-main img {
   height: 100%;
@@ -75,7 +74,7 @@
   max-height: 100%;
 }
 .create-page-main .homepage-main__form-wrapper {
-  height: 100px;
+  height: 15.625rem;
 }
 .create-page-main .homepage-main__form-wrapper form {
   height: 100%;
@@ -120,23 +119,30 @@
 .create-page-main .homepage-main__form-wrapper form .homepage-main__searchcontrolwrapper {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.create-page-main .homepage-main__form-wrapper form .homepage-main__searchcontrolwrapper input {
-  height: 30px;
-  width: 500px;
-  border: none;
-  outline: 1px solid lightgray;
+.create-page-main .homepage-main__form-wrapper form .homepage-main__searchcontrolwrapper textarea {
+  height: 100px;
+  width: 50%;
+  min-width: 260px;
+  max-width: 500px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
   padding: 10px;
-  margin-left: 10px;
+  resize: none;
+  margin-bottom: 10px;
 }
 .create-page-main .homepage-main__form-wrapper form .homepage-main__searchcontrolwrapper button {
-  height: 30px;
-  width: 100px;
-  border: none;
-  background-color: rgb(18, 75, 18);
+  height: 50px;
+  width: 50%;
+  min-width: 260px;
+  max-width: 500px;
+  border: 1px solid lightgray;
+  background-color: rgb(23, 23, 23);
   color: white;
-  margin-right: 10px;
+  border-radius: 5px;
 }
 .create-page-main .homepage-main__showcase {
   display: grid;
@@ -162,19 +168,4 @@
 
 html {
   font-size: 100%;
-}
-
-body {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.app-main {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */

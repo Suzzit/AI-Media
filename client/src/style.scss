@@ -2,31 +2,14 @@
 
 @import "./components/Navbar";
 @import "./pages/login";
-@import './pages/Home';
 @import './pages/Create';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: $root-font-size;
 }
-
-body{
-    height: 100vh;
-    width: 100vw;
-    max-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.app-main{
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-}
-

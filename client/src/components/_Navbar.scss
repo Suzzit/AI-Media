@@ -1,12 +1,16 @@
 .navbar-wrapper {
-    max-width: 100%;
-    height: 50px;
+    width: 100%;
+    height: pxToRem(60);
     display: flex;
     justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid lightgray;
+
+    box-shadow: 1px 7px 10px -4px rgba(0, 0, 0, 0.5);
+    // -webkit-box-shadow: 1px 7px 10px -4px rgba(0, 0, 0, 0.77);
+    // -moz-box-shadow: 1px 7px 10px -4px rgba(0, 0, 0, 0.77);
 
     &__logodiv {
-        margin-left: 10px;
-        width: 200px;
 
         span {
             height: 100%;
@@ -18,7 +22,8 @@
             font: {
                 family: 'Lato';
                 weight: 600;
-                size: pxToRem(19)
+                // size: pxToRem(19)
+                size: clamp(pxToRem(20), 3vw ,30px);
             }
 
             text-decoration: overline underline;
@@ -26,33 +31,34 @@
     }
 
     &__navbar-main {
-        width: 100%;
         height: 100%;
+        width: 50%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: flex-end;
 
+        // @media screen and (max-width: 429px) {
+        //     display: none;
+        // }
         a {
+            height: 100%;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
             text-decoration: none;
             color: black;
 
             font: {
                 family: 'Lato';
                 weight: 600;
-                size: rem(19);
+                size: clamp(1rem, 4vw, 1.2rem);
             }
-
-            margin: 8px 20px;
         }
 
         &__profile-main {
-            background-color: green;
             height: 100%;
-            width: pxToRem(200);
-            min-width: 50px;
-            margin-right: 10px;
-            display: flex;
-            justify-content: center;
+            visibility: hidden;
 
             img {
                 height: 100%;
